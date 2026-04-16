@@ -9,6 +9,7 @@ import {
   ShoppingCart,
   Package,
   Tags,
+  Home,
 } from 'lucide-react'
 
 // ─── Nav structure ───────────────────────────────────────────
@@ -16,7 +17,7 @@ const NAV = [
   {
     section: 'মেইন',
     items: [
-      { to: '/',        label: 'ড্যাশবোর্ড', icon: LayoutDashboard, end: true },
+      { to: '/dashboard',        label: 'ড্যাশবোর্ড', icon: LayoutDashboard, end: true },
       { to: '/users',   label: 'ব্যবহারকারী', icon: Users },
       { to: '/content', label: 'কন্টেন্ট',    icon: FileText },
     ],
@@ -40,6 +41,12 @@ const NAV = [
     section: 'সিস্টেম',
     items: [
       { to: '/settings', label: 'সেটিংস', icon: Settings },
+    ],
+  },
+  {
+    section: 'ওয়েব সাইট | Landing page',
+    items: [
+      { to: '/', label: 'হোমপেজ', icon: Home },
     ],
   },
 ]
